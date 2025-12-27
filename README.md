@@ -22,15 +22,24 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 
 ## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+# EasyGear Admin Portal 🛡️
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The official administrative command center for **EasyGearNG**. This portal provides the tools necessary to manage the e-commerce ecosystem, from inventory tracking to order fulfillment.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+> **Notice:** This is a corporate tool. Unauthorized access to the production environment is strictly prohibited.
 
-## Deploy on Vercel
+## 🛠 Tech Stack
+- **Framework:** Next.js 15 (App Router)
+- **Language:** TypeScript
+- **Auth:** Client-side Persistence (Local Storage) & JWT
+- **Database:** MongoDB Atlas
+- **Styling:** Tailwind CSS
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🚀 Getting Started for Developers
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+To get this project running on your local machine, follow these steps:
+
+### 1. Clone the Repository
+```bash
+git clone [https://github.com/EasyGearNG/easygear-admin-portal.git](https://github.com/EasyGearNG/easygear-admin-portal.git)
+cd easygear-admin-portal
