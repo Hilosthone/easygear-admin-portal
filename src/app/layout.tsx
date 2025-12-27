@@ -23,14 +23,28 @@ export default function RootLayout({
 
   return (
     <html lang='en'>
+      <head>
+        {/* This sets the title in the browser tab */}
+        <title>EasyGear | Admin Portal</title>
+        <meta
+          name='description'
+          content='Management dashboard for EasyGear sports equipment.'
+        />
+        <meta name='viewport' content='width=device-width, initial-scale=1' />
+        <link rel='icon' href='/vercel.svg' />
+      </head>
       <body className='antialiased bg-slate-50 text-slate-900'>
         {/* We only show content once isAuthenticated is no longer null.
-           This prevents the "Missing HTML/Body" error because the tags 
-           above are always rendered.
+            This prevents a "flash" of the login page for users who are already logged in.
         */}
         {isAuthenticated === null ? (
-          <div className='min-h-screen flex items-center justify-center'>
-            <div className='animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600'></div>
+          <div className='min-h-screen flex items-center justify-center bg-white'>
+            <div className='flex flex-col items-center gap-4'>
+              <div className='animate-spin rounded-full h-10 w-10 border-b-2 border-blue-600'></div>
+              <p className='text-sm text-slate-500 font-medium'>
+                Loading EasyGear...
+              </p>
+            </div>
           </div>
         ) : isAuthenticated ? (
           <div className='min-h-screen'>{children}</div>
